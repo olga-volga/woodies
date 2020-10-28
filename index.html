@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Woodies</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header__burger').click(function(event) {
+					$('.header__burger, .header__menu').toggleClass('active');
+					$('body').toggleClass('lock');
+				});
+				$('.header__menu').click(function(event) {
+					$('.header__burger, .header__menu').removeClass('active');
+					$('body').removeClass('lock');
+				});
+				$('.whattheysay-slider').slick({
+					dots: true,
+					slidesToShow: 1,
+					infinite: false
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<div class="header-body">
+					<div class="header-logo">
+						<img src="img/main/logo.svg">
+						<a href="" class="header__logo">WOODIES</a>
+					</div>
+					<div class="header__burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li><a href="" class="header__link active">Home</a></li>
+							<li><a href="#whoweare" class="header__link">About Us</a></li>
+							<li><a href="#howtocustom" class="header__link">How it works</a></li>
+							<li><a href="#whatwehave" class="header__link">Categories</a></li>
+							<li><a href="#whattheysay" class="header__link">Testimony</a></li>
+						</ul>
+					</nav>
+					<div class="header-button">
+						<a href="" class="header__btn btn btn--menu">SIGN UP</a>
+					</div>
+				</div>
+				<div class="container">
+					<div class="main-body">
+						<h1 class="main__title">Are you looking for <span>woodden furniture</span> for your place?</h1>
+						<p class="main__text">This is the Right Place</p>
+						<div class="main-button">
+							<a href="" class="main__btn btn btn--y">Explore Furniture</a>
+						</div>
+					</div>
+				</div>
+			</main>
+			<div class="content">
+				<section id="whoweare" class="whoweare">
+					<div class="container">
+						<div class="whoweare-title title-block">
+							<img src="img/section_logo.svg" alt="" class="section__logo">
+							<h2 class="whoweare__title section__title">Who we are</h2>
+							<div class="title__line"></div>
+						</div>
+						<div class="whoweare-body">
+							<div class="whoweare__column">
+								<div class="item-img">
+									<img src="img/whoweare/01.png" alt="" class="item__img">
+								</div>
+							</div>
+							<div class="whoweare__column">
+								<div class="item-txt">
+									<h3 class="item__title title--h3">WOODIES <span>is the</span> home of modern wooden furniture</h3>
+									<p class="item__text text">the answer to your need for furniture with shapes, sizes and colors.</p>
+								</div>
+							</div>
+						</div>
+						<div class="whoweare-bottom">
+							<div class="whoweare-bottom__item">
+								<h3 class="whoweare-bottom__title title--h3"><span>Customized furniture</span> made just for you</h3>
+								<p class="whoweare-bottom__text text">Get it easy to adjust furniture to the shape and size of your dwelling or business.</p>
+							</div>
+							
+						</div>
+					</div>
+				</section>
+				<section id="howtocustom" class="howtocustom">
+					<div class="container">
+						<div class="howtocustom-title title-block">
+							<img src="img/section_logo.svg" alt="" class="section__logo">
+							<h2 class="howtocustom__title section__title">How to custom</h2>
+							<div class="title__line title__line--2"></div>
+						</div>
+						<div class="howtocustom-body">
+							<div class="howtocustom__column">
+									<div class="item-icon">
+										<img src="img/howtocustom/01.jpg" alt="">
+									</div>
+									<h4 class="column__title">Choose Design</h4>
+							</div>
+							<div class="howtocustom__column">
+									<div class="item-icon">
+										<img src="img/howtocustom/02.jpg" alt="">
+									</div>
+									<h4 class="column__title">Area measuring</h4>
+							</div>
+							<div class="howtocustom__column">
+									<div class="item-icon">
+										<img src="img/howtocustom/03.jpg" alt="">
+									</div>
+									<h4 class="column__title">Budgeting</h4>
+							</div>
+							<div class="howtocustom__column">
+									<div class="item-icon">
+										<img src="img/howtocustom/04.jpg" alt="">
+									</div>
+									<h4 class="column__title">Production</h4>
+							</div>
+						</div>
+						<div class="howtocustom-button">
+							<a href="" class="howtocustom__btn btn btn--y">Get Personalized Now</a>
+						</div>
+					</div>
+				</section>
+				<section id="whatwehave" class="whatwehave">
+					<div class="container">
+						<div class="whatwehave-title title-block">
+							<img src="img/section_logo.svg" alt="" class="section__logo">
+							<h2 class="whatwehave__title section__title">What we have</h2>
+							<div class="title__line title__line--3"></div>
+						</div>
+						<div class="whatwehave-body">
+							<div class="whatwehave__column">
+								<h4 class="whatwehave-column__title">Desk</h4>
+								<div class="whatwehave-column__img1">
+									<img src="img/whatwehave/01.png" alt="" class="img__left">
+								</div>
+								<div class="whatwehave-column__button">
+									<a href="" class="whatwehave__btn btn btn--t">Shop Now</a>
+								</div>
+							</div>
+							<div class="whatwehave__column">
+								<h4 class="whatwehave-column__title">Chair</h4>
+								<div class="whatwehave-column__img">
+									<img src="img/whatwehave/02.png" alt="">
+								</div>
+								<div class="whatwehave-column__button">
+									<a href="" class="whatwehave__btn btn btn--t">Shop Now</a>
+								</div>
+							</div>
+							<div class="whatwehave__column">
+								<h4 class="whatwehave-column__title">Kitchenware</h4>
+								<div class="whatwehave-column__img">
+									<img src="img/whatwehave/03.png" alt="">
+								</div>
+								<div class="whatwehave-column__button">
+									<a href="" class="whatwehave__btn btn btn--t">Shop Now</a>
+								</div>
+							</div>
+							<div class="whatwehave__column">
+								<h4 class="whatwehave-column__title">Book Shelf</h4>
+								<div class="whatwehave-column__img">
+									<img src="img/whatwehave/04.png" alt="">
+								</div>
+								<div class="whatwehave-column__button">
+									<a href="" class="whatwehave__btn btn btn--t">Shop Now</a>
+								</div>
+							</div>
+							<div class="whatwehave__column">
+								<h4 class="whatwehave-column__title">Electronics</h4>
+								<div class="whatwehave-column__img">
+									<img src="img/whatwehave/05.png" alt="">
+								</div>
+								<div class="whatwehave-column__button">
+									<a href="" class="whatwehave__btn btn btn--t">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="whattheysay" class="whattheysay">
+					<div class="container">
+						<div class="whattheysay-title title-block">
+							<img src="img/section_logo.svg" alt="" class="section__logo">
+							<h2 class="whattheysay__title section__title">What they say</h2>
+							<div class="title__line title__line--4"></div>
+						</div>
+						<div class="whattheysay-body">
+							<div class="whattheysay-column__img">
+								<img src="img/whattheysay/01.png" alt="">
+							</div>
+							<div class="whattheysay-column__img">
+								<img src="img/whattheysay/02.png" alt="">
+							</div>
+							<div class="whattheysay-column__slider">
+								<div class="whattheysay-slider">
+									<div class="slider__item">
+										<img src="img/whattheysay/slider_img.png" alt="">
+									</div>
+									<div class="slider__item">
+										<img src="img/whattheysay/slider_img.png" alt="">
+									</div>
+									<div class="slider__item">
+										<img src="img/whattheysay/slider_img.png" alt="">
+									</div>
+									<div class="slider__item">
+										<img src="img/whattheysay/slider_img.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="subscribe">
+					<div class="container">
+						<div class="subscribe-body">
+							<div class="subscribe__column">
+								<h5 class="subscribe__title">Subscribe to our newsletter</h5>
+								<p class="subscribe__text">A monthly digest of the new WOODIES products, hot offers, and resources.</p>
+							</div>
+							<div class="subscribe__column">
+								<div class="subscribe-column__item">
+									<form action="#" class="subscribe-form-body">
+										<div class="form-line">
+											<input type="email" name="email" placeholder="Your email address" class="input" />
+										</div>
+										<div class="form-button">
+											<input type="submit" value="Subscribe" class="subscribe-form__btn btn btn--form" />
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+				<footer class="footer">
+					<div class="container">
+						<div class="footer__line"></div>
+						<div class="footer-body">
+							<div class="footer__column">
+								<div class="footer-logo">
+									<img src="img/footer/logo.svg">
+									<a href="" class="footer__logo">WOODIES</a>
+								</div>
+								<ul class="footer-column__list">
+									<li>
+										<a href="tel:0128967453" class="footer__link">(012) 8967453</a>
+									</li>
+									<li>
+										<a href="mailto:woodies@gmail.com" class="footer__link">woodies@gmail.com</a>
+									</li>
+									<li>
+										<p class="footer__text">Jakarta, Indonesia</p>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h5 class="footer-column__title">Product</h5>
+								<ul class="footer-column__list">
+									<li>
+										<a href="" class="footer__link">Furnitures</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Packages</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Services</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h5 class="footer-column__title">Resources</h5>
+								<ul class="footer-column__list">
+									<li>
+										<a href="" class="footer__link">Blog</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">FAQs</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Contact Us</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h5 class="footer-column__title">Company</h5>
+								<ul class="footer-column__list">
+									<li>
+										<a href="" class="footer__link">About Us</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Jobs</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Our Team</a>
+									</li>
+								</ul>
+							</div>
+							<div class="footer__column">
+								<h5 class="footer-column__title">Follow Us</h5>
+								<ul class="footer-column__list">
+									<li>
+										<a href="" class="footer__link">Facebook</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Instagram</a>
+									</li>
+									<li>
+										<a href="" class="footer__link">Twitter</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<p class="footer__copyright">&copy; 2020 WOODIES</p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
